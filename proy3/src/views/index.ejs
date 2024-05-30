@@ -1,0 +1,27 @@
+<%- include('partials/header'); %>
+
+    <h1>Pagina con express</h1>
+    <p>
+        index 
+
+    </p>
+    <% if (isActive) { %>
+        <p>Esta desactivado</p>
+    <% } else { %>
+        <p>Esta Activado</p>
+        <% } %>
+
+<ul>
+
+
+    <% for(let i=0; i< users.length; i++){ %>
+<li>
+    <%= users[i].name %>
+    <%= users[i].lastname %>
+</li>
+
+
+    <% } %>
+
+</ul>
+<%- include('partials/footer'); %>
